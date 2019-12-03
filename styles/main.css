@@ -1,0 +1,111 @@
+/* font-family: 'Abhaya Libre', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  }
+
+h1{
+  font-family: 'Abhaya Libre', serif;
+  font-size: 250px;
+  color: white;
+  line-height: 10px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  /* font-style: italic; */
+  font-size: 75px;
+  color:lightgrey;
+  line-height: 100px;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  background-color: #ffde59;
+  color: #545454;
+  margin-top: 10px;
+  width:auto;
+}
+
+h3:nth-of-type(1){
+  margin-top: 30px;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  justify-content: center; 
+
+}
+
+.heading{
+  width: auto;
+  align-self: center;
+}
+
+.sub-heading{
+  width: auto;
+  align-self: center;
+}
+
+span {
+  display: inline-block;
+}
+
+.character {
+  display: block;
+  line-height: 0.5;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.dot{
+  margin-left: 10px;
+}
+
+.yellow-dot{
+  color:#ffde59;
+}
+
+.about{
+  background-color: #545454;
+}
+
+.projects{
+  background-color: #545454;
+}
+
+.contact{
+  background-color: #ffde59;
+}
+
+
+
+@keyframes bounce {
+  /* from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -20px, 0);
+  } */
+
+  0% {
+    color: white;
+  }
+  100% {
+    bcolor: #ffde59;
+  }
+}
+
+.bounce {
+  animation: bounce 3s;
+}
