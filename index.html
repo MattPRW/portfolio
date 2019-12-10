@@ -6,44 +6,184 @@
   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:800|Abril|Montserrat:300,300i,400,500|Raleway:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <script src="https://kit.fontawesome.com/3cc3c7705b.js" crossorigin="anonymous"></script>
+  <script src="scripts/app.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Matt Wilkie - Porfolio</title>
 </head>
 <body>
+    <div id="overlay" class='overlay hidden'>
 
-  <div class='section about' id='about'>
-    <div class="header-wrapper">
-      <div class='heading'>
-        <h1>Matt</h1> 
-        <h1>W<!--This comment is required to remove whitespace created by inline-block elements.
-        --><span>
-              <span class="character dot">.</span>
-              <span class="character">ı</span>
-            </span><!--This comment is required to remove whitespace created by inline-block elements.
-            -->lk<!--This comment is required to remove whitespace created by inline-block elements.
-      --><span>
-            <span class="character dot yellow-dot bounce">.</span>
-            <span class="character">ı</span>
-          </span><!--This comment is required to remove whitespace created by inline-block elements.
-          -->e
-        </h1>
-      </div>
-      <div class="sub-heading">
-        <h2>SOFTWARE ENGINEER</h2>
-      </div>
-      <div class="sub-heading">
-          <h3>A recovering SQL developer now working with the full stack.</h3>
-          <h3>Check out my projects below to find out what I'm about...</h3>
+        <div id="pacman-modal" class="project-modal hidden">
+            <div class='modal-top'>
+              <img src='assets/pacman-screenshot.png' class='modal-screenshot'/> 
+              <h2>Pacman</h2>
+            </div>
+            <div class='modal-middle'>
+                <div class="about-text">
+                    <h3>A clone of the arcade classic Pac-man. It was created as </h3>
+                    <h3>a solo project over 7 days, and utilises Vanilla JavaScript,</h3>
+                    <h3> HTML5 and CSS3</h3>
+                </div>   
+            </div>
+            <div class='modal-bottom'>
+                <div class="modal-links">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="modal-links">
+                    <a href='https://mattprw.github.io/project-01/'><h3>Open Site</h3></a>
+                </div>
+            </div>
         </div>
-        <i class="fas fa-chevron-down"></i>
+
+        <div id="scran-modal" class="project-modal hidden">
+            <div class='modal-top'>
+              <img src='assets/scran-screenshot.png' onclick="document.getElementById('whatify').style.display='block'" class='modal-screenshot'/> 
+              <h2>Scran & Screen</h2>
+            </div>
+            <div class='modal-middle'>
+                <div class="about-text">
+                    <h3>A restaurant and cinema recommendation site, using the</h3>
+                    <h3>Zomato and Cinelist APIs. A pair coded project created </h3>
+                    <h3>in 48 hours. This project used React, HTML5 and CSS3, and</h3>
+                    <h3>was deployed using Heroku.</h3>
+                </div>   
+            </div>
+            <div class='modal-bottom'>
+                <div class="modal-links">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="modal-links">
+                    <a href='https://scran.herokuapp.com/'><h3>Open Site</h3></a>
+                </div>
+            </div>
+          </div>
+
+      <div id="rekordr-modal" class="project-modal hidden">
+        <div class='modal-top'>
+          <img src='assets/rekordr-screenshot.png' onclick="document.getElementById('whatify').style.display='block'" class='modal-screenshot'/> 
+          <h2>Rekordr</h2>
+        </div>
+        <div class='modal-middle'>
+            <div class="about-text">
+                <h3>A music quiz game using Spotify's API and user created data</h3>
+                <h3>to make games custom to the player. Whatify was created by </h3>
+                <h3>a 3 person team across a week, and utilises JavaScript,</h3>
+                <h3> React, Python, Django, PostgreSQL and Heroku.</h3>
+            </div>   
+        </div>
+        <div class='modal-bottom'>
+            <div class="modal-links">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="modal-links">
+                <a href='https://rekordr.herokuapp.com/'><h3>Open Site</h3></a>
+            </div>
+        </div>
+      </div>
+      
+      <div id="whatify-modal" class="project-modal hidden">
+          <div class='modal-top'>
+            <img src='assets/whatify-screenshot.png' class='modal-screenshot'/> 
+            <h2>Whatify?</h2>
+          </div>
+          <div class='modal-middle'>
+              <div class="about-text">
+                  <h3>A music quiz game using Spotify's API and user created data</h3>
+                  <h3>to make games custom to the player. Whatify was created by </h3>
+                  <h3>a 3 person team across a week, and utilises JavaScript,</h3>
+                  <h3> React, Python, Django, PostgreSQL and Heroku.</h3>
+              </div>   
+          </div>
+          <div class='modal-bottom'>
+              <div class="modal-links">
+                  <i class="fab fa-github"></i>
+              </div>
+              <div class="modal-links">
+                  <h3>Open Site</h3>
+              </div>
+          </div>
+        </div>
+
     </div>
-  </div>
+    <div class='section about' id='about'>
+        
+        <div class='about-top pane'></div>
+        <div class='about-middle pane'>
+          <div class='centre pane'>
+              <div class='heading'>
+                  <h1>Matt</h1> 
+                  <h1>W<!--This comment is required to remove whitespace created by inline-block elements.
+                  --><span>
+                        <span class="character dot">.</span>
+                        <span class="character">ı</span>
+                      </span><!--This comment is required to remove whitespace created by inline-block elements.
+                      -->lk<!--This comment is required to remove whitespace created by inline-block elements.
+                --><span>
+                      <span class="character dot yellow-dot bounce">.</span>
+                      <span class="character">ı</span>
+                    </span><!--This comment is required to remove whitespace created by inline-block elements.
+                    -->e
+                  </h1>
+              </div>
+              <div class="sub-heading job-title">
+                  <h2>SOFTWARE ENGINEER</h2>
+              </div>
+              <div class="about-text">
+                  <h3>A recovering SQL developer now working with the full stack.</h3>
+                  <h3>Check out my projects below to find out what I'm about...</h3>
+              </div>
+          </div>
+        </div>
+        <div class='about-bottom pane'>
+            <a href="#projects" class="project-arrow"><i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
 
-  <div class='section projects' id='projects'>
 
-  </div>
-  <div class='section contact' id='contact'>
 
-  </div> 
+      <div id='projects' class='section projects'>
+        <div class='project-top pane'>
+        </div>
+        <div class='project-upper-middle pane'>
+            <div class='project-centre pane'>
+                <div class='heading'><h1>Projects</h1></div>
+                <div class="sub-heading"><h2 class="more-info">CLICK THROUGH FOR MORE INFORMATION...</h2></div>
+            </div>
+        </div>
+        <div class='project-lower-middle pane'>
+          <div class='projects-frame'>
+            <div class='project-container' id='pacman'>
+                <img src='assets/pacman-screenshot.png'  class='screenshot pacman'/>
+                <h3 class='project-title'>Pac-Man</h3>
+            </div>
+            <div class='project-container'>
+                <img src='assets/scran-screenshot.png' id='scran' class='screenshot scran'/>
+                <h3 class='project-title'>Scran & Screen</h3>
+            </div>
+            <div class='project-container'>
+                <img src='assets/rekordr-screenshot.png' id='rekordr' class='screenshot rekordr'/>
+                  <h3 class='project-title'>Rekordr</h3>
+            </div>
+            <div class='project-container'>
+                <img src='assets/whatify-screenshot.png' id='whatify' class='screenshot whatify'/> 
+                <h3 class='project-title'>Whatify?</h3>
+            </div>
+          </div>
+        </div>
+        <div class='project-bottom pane'>
+            <a href="#projects" class="project-arrow"><i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
+
+
+
+
+      <div id='contact' class='section contact'>
+        
+      </div>
+
+
+
+
 </body>
 </html>
