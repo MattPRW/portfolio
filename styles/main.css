@@ -97,6 +97,7 @@ span {
   display: flex;
   align-items: baseline;
   height: 63px;
+  border: 0;Z
 }
 
 .about{
