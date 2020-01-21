@@ -102,6 +102,7 @@ span {
   /* align-items: baseline; */
   /* height: 63px; */
   border: 0;
+  text-decoration: none;
 }
 
 .about{
