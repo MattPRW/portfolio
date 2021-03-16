@@ -1,23 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   
-  function showPacman() {
+  function showProject(project) {
     document.getElementById('overlay').classList.remove('hidden')
-    document.getElementById('pacman-modal').classList.remove('hidden')
-  }
-
-  function showScran() {
-    document.getElementById('overlay').classList.remove('hidden')
-    document.getElementById('scran-modal').classList.remove('hidden')
-  }
-
-  function showRekordr() {
-    document.getElementById('overlay').classList.remove('hidden')
-    document.getElementById('rekordr-modal').classList.remove('hidden')
-  }
-
-  function showWhatify() {
-    document.getElementById('overlay').classList.remove('hidden')
-    document.getElementById('whatify-modal').classList.remove('hidden')
+    document.getElementById(project).classList.remove('hidden')
   }
 
   function hide() {
@@ -28,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('pacman-modal').classList.add('hidden')
   }
 
-  document.getElementById('overlay').addEventListener('click', hide)
-  document.getElementById('pacman').addEventListener('click', showPacman)
-  document.getElementById('scran').addEventListener('click', showScran)
-  document.getElementById('rekordr').addEventListener('click', showRekordr)
-  document.getElementById('whatify').addEventListener('click', showWhatify)
+  document.getElementById('overlay').addEventListener('click', (hide))
+
+  document.getElementById('pacman').addEventListener('click', () => showProject('pacman-modal'))
+  document.getElementById('scran').addEventListener('click', () => showProject('scran-modal'))
+  document.getElementById('rekordr').addEventListener('click', () => showProject('rekordr-modal'))
+  document.getElementById('whatify').addEventListener('click', () => showProject('whatify-modal'))
+
 })
